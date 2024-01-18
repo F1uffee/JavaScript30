@@ -62,7 +62,11 @@
   window.addEventListener('keydown', event => {
   const audio = document.querySelector(`audio[data-key="${event.keyCode}"]`);
   if(!audio) return; // stop the function from running all together
+  audio.currentTime = 0;
   audio.play();
+  const square = document.querySelector(`div[data-key="${event.keyCode}"]`);
+  if(!square) return; // stop the function from running all together
+  square.classList.add("playing");
 });
 </script>
 

@@ -58,6 +58,10 @@ body {
   border-color: #ffc600;
 }
 
+.player__button:hover {
+  color: #ffc600;
+}
+
 .player__slider {
   width: 10px;
   height: 30px;
